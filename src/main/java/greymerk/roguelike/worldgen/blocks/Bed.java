@@ -12,20 +12,12 @@ public class Bed {
 		
 		Coord cursor = new Coord(pos);
 		
-		int meta;
 		
-		switch(Cardinal.reverse(dir)){
-		case SOUTH: meta = 0; break;
-		case WEST: meta = 1; break;
-		case NORTH: meta = 2; break;
-		case EAST: meta = 3; break;
-		default: meta = 0; break;
-		}
 		
-		MetaBlock head = new MetaBlock(Blocks.bed, meta + 8);
+		MetaBlock head = new MetaBlock(Blocks.air);
 		head.setBlock(editor, cursor);
 		
-		MetaBlock foot = new MetaBlock(Blocks.bed, meta);
+		MetaBlock foot = new MetaBlock(Blocks.air);
 		cursor.add(dir);
 		foot.setBlock(editor, cursor);
 	}

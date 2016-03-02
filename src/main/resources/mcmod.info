@@ -1,11 +1,10 @@
 [
 	{
-		"modid" : "Roguelike",
-		"name" : "Roguelike Dungeons",
-		"description" : "Adds randomized dungeons to the world",
-		"version" : "1.4.4",
-		"url" : "github.com/Greymerk/minecraft-roguelike",
-		"authorList" : ["Greymerk"],
+		"modid" : "Roguelike TFC Conversion",
+		"name" : "Roguelike Dungeons for TFC",
+		"description" : "Adds randomized dungeons to the TFC world",
+		"version" : "1.0.1",
+		"authorList" : ["greymerk base mod, Drakkett TFC conversion"],
 		"mcversion" : "1.7.10"
 	}
 ]

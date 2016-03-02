@@ -1,5 +1,7 @@
 package greymerk.roguelike.worldgen.blocks;
 
+import com.bioxx.tfc.api.TFCBlocks;
+
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 
@@ -9,20 +11,20 @@ public enum StairType {
 	
 	public static Block getBlock(StairType type){
 		switch(type){
-		case COBBLE: return Blocks.stone_stairs;
-		case STONEBRICK: return Blocks.stone_brick_stairs;
-		case BRICK: return Blocks.brick_stairs;
+		case COBBLE: return TFCBlocks.stoneMMSmooth;
+		case STONEBRICK: return TFCBlocks.stoneMMBrick;
+		case BRICK: return TFCBlocks.stoneSedBrick;
 		case RED_SANDSTONE:
-		case SANDSTONE: return Blocks.sandstone_stairs;
-		case QUARTZ: return Blocks.quartz_stairs;
+		case SANDSTONE: return TFCBlocks.stoneIgInSmooth;
+		case QUARTZ: return TFCBlocks.stoneSedSmooth;
 		case NETHERBRICK: return Blocks.nether_brick_stairs;
-		case OAK: return Blocks.oak_stairs;
-		case SPRUCE: return Blocks.spruce_stairs;
-		case BIRCH: return Blocks.birch_stairs;
-		case JUNGLE: return Blocks.jungle_stairs;
-		case ACACIA: return Blocks.acacia_stairs;
-		case DARKOAK: return Blocks.dark_oak_stairs;
-		default: return Blocks.stone_stairs;
+		case OAK: return TFCBlocks.planks;
+		case SPRUCE: return TFCBlocks.stoneIgExSmooth;
+		case BIRCH: return TFCBlocks.stoneIgExBrick;
+		case JUNGLE: return TFCBlocks.stoneIgInBrick;
+		case ACACIA: return TFCBlocks.planks2;
+		case DARKOAK: return TFCBlocks.planks2;
+		default: return TFCBlocks.planks;
 		}
 	}
 }

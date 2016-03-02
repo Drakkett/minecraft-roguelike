@@ -53,7 +53,7 @@ public class Dungeon implements IDungeon{
 		int attempts = 50;
 		
 		for(int i = 0;i < attempts;i++){
-			Coord location = getNearbyCoord(rand, x, z, 40, 100);
+			Coord location = getNearbyCoord(rand, x, z, 90, 100);
 			
 			if(!validLocation(rand, location.getX(), location.getZ())) continue;
 			
@@ -68,7 +68,7 @@ public class Dungeon implements IDungeon{
 	
 	public void generate(ISettings settings, int inX, int inZ){
 		generator.generate(editor, settings, inX, inZ);
-		this.pos = new Coord(inX, 50, inZ);
+		this.pos = new Coord(inX, 100, inZ);
 
 		Random rand = getRandom(editor, this.pos.getX(), this.pos.getZ());
 		TreasureManager treasure = editor.getTreasure();

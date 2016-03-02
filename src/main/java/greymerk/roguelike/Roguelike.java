@@ -14,7 +14,7 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.event.FMLServerStartingEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 
-@Mod(modid="Roguelike", name="Roguelike Dungeons", version=Roguelike.version, acceptableRemoteVersions="*")
+@Mod(modid="Roguelike", name="Roguelike Dungeons", version=Roguelike.version, dependencies = "required-after:terrafirmacraft", acceptableRemoteVersions="*")
 
 public class Roguelike {
 

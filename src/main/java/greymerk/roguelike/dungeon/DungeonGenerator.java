@@ -12,7 +12,7 @@ import greymerk.roguelike.worldgen.WorldEditor;
 
 public class DungeonGenerator {
 	public static final int VERTICAL_SPACING = 10;
-	public static final int TOPLEVEL = 50;
+	public static final int TOPLEVEL = 100;
 	
 	private List<IDungeonLevel> levels;
 	

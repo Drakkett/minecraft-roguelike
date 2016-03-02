@@ -1,5 +1,7 @@
 package greymerk.roguelike.worldgen.blocks;
 
+import com.bioxx.tfc.api.TFCBlocks;
+
 import greymerk.roguelike.worldgen.MetaBlock;
 import net.minecraft.init.Blocks;
 
@@ -13,20 +15,20 @@ public enum Wood {
 	
 	public static MetaBlock get(Wood type, WoodBlock block){
 		switch(block){
-		case LOG: return Log.getLog(type);
+		case LOG: return getPlank(type);
 		case PLANK: return getPlank(type);
 		case FENCE: return getFence(type);
-		default: return Log.getLog(OAK);
+		default: return getPlank(OAK);
 		}
 	}
 	
 	public static MetaBlock getPlank(Wood type){
 		
-		MetaBlock plank = new MetaBlock(Blocks.planks);
+		MetaBlock plank = new MetaBlock(TFCBlocks.planks);
 		
 		switch(type){
 		case OAK: plank.setMeta(0); break;
-		case SPRUCE: plank.setMeta(1); break;
+		case SPRUCE: plank.setMeta(10); break;
 		case BIRCH: plank.setMeta(2); break;
 		case JUNGLE: plank.setMeta(3); break;
 		case ACACIA: plank.setMeta(4); break;
@@ -37,15 +39,15 @@ public enum Wood {
 	}
 	
 	public static MetaBlock getFence(Wood type){
-		return new MetaBlock(Blocks.fence);
+		return new MetaBlock(TFCBlocks.fence);
 	}
 	
 	public static MetaBlock getSapling(Wood type){
-		MetaBlock sapling = new MetaBlock(Blocks.sapling);
+		MetaBlock sapling = new MetaBlock(TFCBlocks.sapling);
 		
 		switch(type){
 		case OAK: sapling.setMeta(0); break; 
-		case SPRUCE: sapling.setMeta(1); break;
+		case SPRUCE: sapling.setMeta(10); break;
 		case BIRCH: sapling.setMeta(2); break;
 		case JUNGLE: sapling.setMeta(3); break;
 		case ACACIA: sapling.setMeta(4); break;

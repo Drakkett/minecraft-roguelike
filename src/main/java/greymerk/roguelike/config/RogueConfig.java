@@ -57,8 +57,8 @@ public enum RogueConfig {
 			return new Tuple(getName(option), new ArrayList<Integer>());
 		case PRECIOUSBLOCKS: return new Tuple(getName(option), true);
 		case LOOTING: return new Tuple(getName(option), 0.085D);
-		case UPPERLIMIT: return new Tuple(getName(option), 100);
-		case LOWERLIMIT: return new Tuple(getName(option), 60);
+		case UPPERLIMIT: return new Tuple(getName(option), 160);
+		case LOWERLIMIT: return new Tuple(getName(option), 90);
 		case ROGUESPAWNERS: return new Tuple(getName(option), true);
 		default: return null;
 		}

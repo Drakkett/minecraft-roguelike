@@ -2,6 +2,8 @@ package greymerk.roguelike.worldgen.blocks;
 
 import java.util.Random;
 
+import com.bioxx.tfc.api.TFCBlocks;
+
 import greymerk.roguelike.worldgen.Cardinal;
 import greymerk.roguelike.worldgen.Coord;
 import greymerk.roguelike.worldgen.MetaBlock;
@@ -34,7 +36,7 @@ public class Vine {
 		
 		for (int dir = 2; dir <= 5; ++dir){
 			if (editor.canPlaceOnSide(Blocks.vine, pos, dir)){
-				editor.setBlock(pos, new MetaBlock(Blocks.vine, 1 << Direction.facingToDirection[Facing.oppositeSide[dir]]), true, true);
+				editor.setBlock(pos, new MetaBlock(TFCBlocks.vine, 1 << Direction.facingToDirection[Facing.oppositeSide[dir]]), true, true);
 			};
 		}
 	}

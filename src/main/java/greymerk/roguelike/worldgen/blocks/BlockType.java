@@ -5,6 +5,7 @@ import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import com.bioxx.tfc.api.TFCBlocks;
 
 public enum BlockType {
 
@@ -28,61 +29,61 @@ public enum BlockType {
 		
 		switch(type){
 		case AIR: return new MetaBlock(Blocks.air);
-		case WATER_STILL: return new MetaBlock(Blocks.water);
-		case WATER_FLOWING: return new MetaBlock(Blocks.flowing_water);
-		case LAVA_STILL: return new MetaBlock(Blocks.lava);
-		case LAVA_FLOWING: return new MetaBlock(Blocks.flowing_lava);
+		case WATER_STILL: return new MetaBlock(TFCBlocks.saltWaterStationary);
+		case WATER_FLOWING: return new MetaBlock(TFCBlocks.saltWater);
+		case LAVA_STILL: return new MetaBlock(TFCBlocks.lavaStationary);
+		case LAVA_FLOWING: return new MetaBlock(TFCBlocks.lava);
 		case FIRE: return new MetaBlock(Blocks.fire);
 		case IRON_BAR: return new MetaBlock(Blocks.iron_bars);
-		case GRANITE: return new MetaBlock(Blocks.stone);
-		case GRANITE_POLISHED: return new MetaBlock(Blocks.stone);
-		case DIORITE: return new MetaBlock(Blocks.stone);
-		case DIORITE_POLISHED: return new MetaBlock(Blocks.stone);
-		case ANDESITE: return new MetaBlock(Blocks.stonebrick);
-		case ANDESITE_POLISHED: return Slab.get(Slab.STONE, false, true, true);
-		case STONE_SMOOTH: return new MetaBlock(Blocks.stone);
-		case GRASS: return new MetaBlock(Blocks.grass);
-		case DIRT: return new MetaBlock(Blocks.dirt);
+		case GRANITE: return new MetaBlock(TFCBlocks.stoneMMSmooth, 1);
+		case GRANITE_POLISHED: return new MetaBlock(TFCBlocks.stoneMMSmooth, 1);
+		case DIORITE: return new MetaBlock(TFCBlocks.stoneMMSmooth, 1);
+		case DIORITE_POLISHED: return new MetaBlock(TFCBlocks.stoneMMSmooth, 1);
+		case ANDESITE: return new MetaBlock(TFCBlocks.stoneIgExBrick, 2);
+		case ANDESITE_POLISHED: return new MetaBlock(TFCBlocks.stoneMMSmooth, 1);
+		case STONE_SMOOTH: return new MetaBlock(TFCBlocks.stoneMMSmooth, 1);
+		case GRASS: return new MetaBlock(TFCBlocks.grass);
+		case DIRT: return new MetaBlock(TFCBlocks.dirt);
 		case DIRT_COARSE:
-		case DIRT_PODZOL: return new MetaBlock(Blocks.dirt, 2);
-		case COBBLESTONE: return new MetaBlock(Blocks.cobblestone);
-		case COBBLESTONE_WALL: return new MetaBlock(Blocks.cobblestone_wall);
+		case DIRT_PODZOL: return new MetaBlock(TFCBlocks.dirt2);
+		case COBBLESTONE: return new MetaBlock(TFCBlocks.stoneMM, 2);
+		case COBBLESTONE_WALL: return new MetaBlock(TFCBlocks.wallCobbleMM, 2);
 		case BEDROCK: return new MetaBlock(Blocks.bedrock);
-		case SAND: return new MetaBlock(Blocks.sand);
-		case SAND_RED: return new MetaBlock(Blocks.sand, 1);
-		case GRAVEL: return new MetaBlock(Blocks.gravel);
-		case ORE_GOLD: return new MetaBlock(Blocks.gold_ore);
-		case ORE_IRON: return new MetaBlock(Blocks.iron_ore);
+		case SAND: return new MetaBlock(TFCBlocks.stoneIgInSmooth, 1);
+		case SAND_RED: return new MetaBlock(TFCBlocks.stoneIgInBrick, 1);
+		case GRAVEL: return new MetaBlock(TFCBlocks.stoneIgExSmooth);
+		case ORE_GOLD: return new MetaBlock(TFCBlocks.ore);
+		case ORE_IRON: return new MetaBlock(TFCBlocks.ore2);
 		case GLASS: return new MetaBlock(Blocks.glass);
-		case ORE_LAPIS: return new MetaBlock(Blocks.lapis_ore);
+		case ORE_LAPIS: return new MetaBlock(TFCBlocks.ore3);
 		case LAPIS_BLOCK: return new MetaBlock(Blocks.lapis_block);
 		case ORE_EMERALD: return new MetaBlock(Blocks.emerald_ore);
 		case SANDSTONE_RED:
-		case SANDSTONE: return new MetaBlock(Blocks.sandstone);
+		case SANDSTONE: return new MetaBlock(TFCBlocks.stoneSed, 3);
 		case SANDSTONE_RED_CHISELED:
-		case SANDSTONE_CHISELED: return new MetaBlock(Blocks.sandstone, 1);
+		case SANDSTONE_CHISELED: return new MetaBlock(TFCBlocks.stoneSedBrick, 3);
 		case SANDSTONE_RED_SMOOTH:
-		case SANDSTONE_SMOOTH: return new MetaBlock(Blocks.sandstone, 2);
+		case SANDSTONE_SMOOTH: return new MetaBlock(TFCBlocks.stoneSedSmooth, 3);
 		case GOLD_BLOCK: return new MetaBlock(Blocks.gold_block);
 		case IRON_BLOCK: return new MetaBlock(Blocks.iron_block);
-		case BRICK: return new MetaBlock(Blocks.brick_block);
-		case COBBLESTONE_MOSSY: return new MetaBlock(Blocks.mossy_cobblestone);
-		case OBSIDIAN: return new MetaBlock(Blocks.obsidian);
+		case BRICK: return new MetaBlock(TFCBlocks.stoneSedBrick, 6);
+		case COBBLESTONE_MOSSY: return new MetaBlock(TFCBlocks.stoneMM, 3);
+		case OBSIDIAN: return new MetaBlock(TFCBlocks.stoneIgExSmooth, 1);
 		case ORE_DIAMOND: return new MetaBlock(Blocks.diamond_ore);
 		case DIAMOND_BLOCK: return new MetaBlock(Blocks.diamond_block);
-		case FARMLAND: return new MetaBlock(Blocks.farmland);
+		case FARMLAND: return new MetaBlock(TFCBlocks.dirt2,4);
 		case ORE_REDSTONE: return new MetaBlock(Blocks.redstone_ore);
-		case ICE: return new MetaBlock(Blocks.ice);
-		case SNOW: return new MetaBlock(Blocks.snow);
-		case CLAY: return new MetaBlock(Blocks.clay);
+		case ICE: return new MetaBlock(TFCBlocks.ice);
+		case SNOW: return new MetaBlock(TFCBlocks.snow);
+		case CLAY: return new MetaBlock(TFCBlocks.clay2);
 		case NETHERRACK: return new MetaBlock(Blocks.netherrack);
 		case SOUL_SAND: return new MetaBlock(Blocks.soul_sand);
 		case GLOWSTONE: return new MetaBlock(Blocks.glowstone);
-		case STONE_BRICK: return new MetaBlock(Blocks.stonebrick);
-		case STONE_BRICK_MOSSY: return new MetaBlock(Blocks.stonebrick, 1);
-		case STONE_BRICK_CRACKED: return new MetaBlock(Blocks.stonebrick, 2);
-		case STONE_BRICK_CHISELED: return new MetaBlock(Blocks.stonebrick, 3);
-		case MYCELIUM: return new MetaBlock(Blocks.mycelium);
+		case STONE_BRICK: return new MetaBlock(TFCBlocks.stoneIgExBrick, 2);
+		case STONE_BRICK_MOSSY: return new MetaBlock(TFCBlocks.stoneMMBrick, 3);
+		case STONE_BRICK_CRACKED: return new MetaBlock(TFCBlocks.stoneMMBrick, 4);
+		case STONE_BRICK_CHISELED: return new MetaBlock(TFCBlocks.stoneIgInBrick, 1);
+		case MYCELIUM: return new MetaBlock(TFCBlocks.dirt2,3);
 		case NETHERBRICK: return new MetaBlock(Blocks.nether_brick);
 		case END_STONE: return new MetaBlock(Blocks.end_stone);
 		case EMERALD_BLOCK: return new MetaBlock(Blocks.emerald_block);
@@ -90,28 +91,28 @@ public enum BlockType {
 		case PRISMITE: 
 		case PRISMARINE: 
 		case PRISMARINE_DARK: return new MetaBlock(Blocks.cobblestone);
-		case COAL_BLOCK: return new MetaBlock(Blocks.coal_block);
+		case COAL_BLOCK: return new MetaBlock(TFCBlocks.charcoal);
 		case ICE_PACKED: return new MetaBlock(Blocks.packed_ice);
-		case QUARTZ: return new MetaBlock(Blocks.quartz_block);
+		case QUARTZ: return new MetaBlock(TFCBlocks.stoneMMSmooth, 5);
 		case REDSTONE_BLOCK: return new MetaBlock(Blocks.redstone_block);
 		case PRESSURE_PLATE_STONE: return new MetaBlock(Blocks.stone_pressure_plate);
 		case PRESSURE_PLATE_WOODEN: return new MetaBlock(Blocks.wooden_pressure_plate);
-		case SHELF: return new MetaBlock(Blocks.bookshelf);
+		case SHELF: return new MetaBlock(TFCBlocks.bookshelf);
 		case REDSTONE_WIRE: return new MetaBlock(Blocks.redstone_wire);
-		case COCAO: return new MetaBlock(Blocks.cocoa);
-		case REEDS: return new MetaBlock(Blocks.reeds);
+		case COCAO: return new MetaBlock(TFCBlocks.flowers);
+		case REEDS: return new MetaBlock(TFCBlocks.reeds);
 		case CRAFTING_TABLE: return new MetaBlock(Blocks.crafting_table);
 		case NOTEBLOCK: return new MetaBlock(Blocks.noteblock);
 		case REDSTONE_LAMP: return new MetaBlock(Blocks.redstone_lamp);
 		case REDSTONE_LAMP_LIT: return new MetaBlock(Blocks.lit_redstone_lamp);
 		case JUKEBOX: return new MetaBlock(Blocks.jukebox);
-		case FENCE: return new MetaBlock(Blocks.fence);
+		case FENCE: return new MetaBlock(TFCBlocks.fence);
 		case TNT: return new MetaBlock(Blocks.tnt);
 		case ENCHANTING_TABLE: return new MetaBlock(Blocks.enchanting_table);
 		case FENCE_NETHER_BRICK: return new MetaBlock(Blocks.nether_brick_fence);
 		case WEB: return new MetaBlock(Blocks.web);
-		case PUMPKIN_LIT: return new MetaBlock(Blocks.lit_pumpkin);
-		case VINE: return new MetaBlock(Blocks.vine);
+		case PUMPKIN_LIT: return new MetaBlock(TFCBlocks.litPumpkin);
+		case VINE: return new MetaBlock(TFCBlocks.vine);
 		default: return new MetaBlock(Blocks.air);
 		}
 	}

@@ -1,8 +1,10 @@
 package greymerk.roguelike.worldgen.blocks;
 
+import com.bioxx.tfc.api.TFCBlocks;
+
 import greymerk.roguelike.worldgen.MetaBlock;
 import net.minecraft.block.Block;
-import net.minecraft.init.Blocks;
+
 
 public enum Leaves {
 	
@@ -22,25 +24,20 @@ public enum Leaves {
 	
 	public static Block getBlockId(Leaves type){
 		switch(type){
-		case OAK: return Blocks.leaves;
-		case SPRUCE: return Blocks.leaves;
-		case BIRCH: return Blocks.leaves;
-		case JUNGLE: return Blocks.leaves;
-		case ACACIA: return Blocks.leaves2;
-		case DARKOAK: return Blocks.leaves2;
-		default: return Blocks.log;
+		case OAK: return TFCBlocks.leaves;
+		case SPRUCE: return TFCBlocks.leaves;
+		case BIRCH: return TFCBlocks.leaves;
+		case JUNGLE: return TFCBlocks.leaves;
+		case ACACIA: return TFCBlocks.leaves;
+		case DARKOAK: return TFCBlocks.leaves;
+		default: return TFCBlocks.leaves;
 		}
 	}
 	
 	private static int getType(Leaves type){
 		
 		switch(type){
-		case OAK: return 0;
-		case SPRUCE: return 1;
-		case BIRCH: return 2;
-		case JUNGLE: return 3;
-		case ACACIA: return 0;
-		case DARKOAK: return 1;
+		
 		default: return 0;
 		}		
 	}

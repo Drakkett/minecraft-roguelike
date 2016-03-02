@@ -1,9 +1,11 @@
 package greymerk.roguelike.worldgen.blocks;
 
+import com.bioxx.tfc.api.TFCBlocks;
+
 import greymerk.roguelike.worldgen.Cardinal;
 import greymerk.roguelike.worldgen.MetaBlock;
 import net.minecraft.block.Block;
-import net.minecraft.init.Blocks;
+
 
 public class Log {
 
@@ -20,13 +22,13 @@ public class Log {
 	
 	public static Block getBlockId(Wood type){
 		switch(type){
-		case OAK: return Blocks.log;
-		case SPRUCE: return Blocks.log;
-		case BIRCH: return Blocks.log;
-		case JUNGLE: return Blocks.log;
-		case ACACIA: return Blocks.log2;
-		case DARKOAK: return Blocks.log2;
-		default: return Blocks.log;
+		case OAK: return TFCBlocks.fence;
+		case SPRUCE: return TFCBlocks.fence;
+		case BIRCH: return TFCBlocks.fence;
+		case JUNGLE: return TFCBlocks.fence;
+		case ACACIA: return TFCBlocks.fence2;
+		case DARKOAK: return TFCBlocks.fence;
+		default: return TFCBlocks.fence;
 		}
 	}
 	

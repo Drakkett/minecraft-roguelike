@@ -22,12 +22,12 @@ group= "ca.rivas.roguelike" // http://maven.apache.org/guides/mini/guide-naming-
 archivesBaseName = "roguelike"
 
 minecraft {
-    version = "1.7.10-10.13.4.1558-1.7.10"
+    version = "1.7.10-10.13.4.1566-1.7.10"
 	runDir = "assets"	
 }
 
 dependencies {
-    // you may put jars on which you depend on in ./libs
+  // you may put jars on which you depend on in ./libs
     // or you may define them like so..
     //compile "some.group:artifact:version:classifier"
     //compile "some.group:artifact:version"

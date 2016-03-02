@@ -25,9 +25,9 @@ public enum Tower {
 	
 	public static Coord getBaseCoord(WorldEditor editor, int x, int y, int z){
 		
-		Coord cursor = new Coord(x, 128, z);
+		Coord cursor = new Coord(x, 200, z);
 
-		while(cursor.getY() > 60){
+		while(cursor.getY() > 100){
 			if(editor.validGroundBlock(cursor)) break;
 			cursor.add(Cardinal.DOWN);
 		}

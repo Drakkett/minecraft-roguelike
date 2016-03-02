@@ -358,11 +358,11 @@ public class EniTower implements ITower {
 			editor.setBlock(rand, cursor, blocks, true, true);
 		}
 		
-		start = new Coord(x - 4, 60, z - 4);
+		start = new Coord(x - 4, 110, z - 4);
 		end = new Coord(x + 4, floor.getY(), z + 4);
 		editor.fillRectSolid(rand, start, end, blocks, true, true);
 		
-		for(int i = (floor.getY() + 22); i >= 50; --i){
+		for(int i = (floor.getY() + 22); i >= 100; --i){
 			editor.spiralStairStep(rand, new Coord(x, i, z), stair, theme.getPrimaryPillar());
 		}
 		

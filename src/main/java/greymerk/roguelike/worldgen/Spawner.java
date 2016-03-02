@@ -50,22 +50,21 @@ public enum Spawner {
 	
 	public static String getSpawnerName(Spawner type) {
 		switch(type){
-		case CREEPER: return "Creeper";
-		case CAVESPIDER: return "CaveSpider";
-		case SPIDER: return "Spider";
-		case SKELETON: return "Skeleton";
-		case ZOMBIE: return "Zombie";
-		case SILVERFISH: return "Silverfish";
-		case ENDERMAN: return "Enderman";
+		case CREEPER: return "creeperTFC";
+		case CAVESPIDER: return "caveSpiderTFC";
+		case SPIDER: return "spiderTFC";
+		case SKELETON: return "skeletonTFC";
+		case ZOMBIE: return "zombieTFC";
+		case SILVERFISH: return "silverfishTFC";
+		case ENDERMAN: return "endermanTFC";
 		case WITCH:	return "Witch";
 		case WITHERBOSS: return "WitherBoss";
-		case BAT: return "Bat";
 		case LAVASLIME:	return "LavaSlime";
 		case BLAZE:	return "Blaze";
-		case SLIME:	return "Slime";
+		case SLIME:	return "slimeTFC";
 		case PRIMEDTNT:	return "PrimedTnt";
 		case PIGZOMBIE:	return "PigZombie";
-		default: return "pig";
+		default: return "zombieTFC";
 		}
 	}
 
