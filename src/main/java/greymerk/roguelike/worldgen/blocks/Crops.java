@@ -2,6 +2,7 @@ package greymerk.roguelike.worldgen.blocks;
 
 import greymerk.roguelike.worldgen.Cardinal;
 import greymerk.roguelike.worldgen.MetaBlock;
+import com.bioxx.tfc.api.TFCBlocks;
 import net.minecraft.init.Blocks;
 
 public enum Crops {
@@ -10,13 +11,13 @@ public enum Crops {
 	
 	public static MetaBlock get(Crops type){
 		switch(type){
-		case WHEAT: return new MetaBlock(Blocks.wheat);
-		case CARROTS: return new MetaBlock(Blocks.carrots);
+		case WHEAT: return new MetaBlock(TFCBlocks.crops, 2);
+		case CARROTS: return new MetaBlock(TFCBlocks.crops,11);
 		case NETHERWART: return new MetaBlock(Blocks.nether_wart);
-		case MELON: return new MetaBlock(Blocks.melon_stem);
-		case PUMPKIN: return new MetaBlock(Blocks.pumpkin_stem);
-		case POTATOES: return new MetaBlock(Blocks.potatoes);
-		default: return new MetaBlock(Blocks.wheat);
+		case MELON: return new MetaBlock(Blocks.melon_block);
+		case PUMPKIN: return new MetaBlock(TFCBlocks.crops,19);
+		case POTATOES: return new MetaBlock(TFCBlocks.crops,7);
+		default: return new MetaBlock(TFCBlocks.crops,1);
 		}
 	}
 	

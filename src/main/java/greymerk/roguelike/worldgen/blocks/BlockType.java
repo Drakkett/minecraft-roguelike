@@ -71,7 +71,7 @@ public enum BlockType {
 		case OBSIDIAN: return new MetaBlock(TFCBlocks.stoneIgExSmooth, 1);
 		case ORE_DIAMOND: return new MetaBlock(Blocks.diamond_ore);
 		case DIAMOND_BLOCK: return new MetaBlock(Blocks.diamond_block);
-		case FARMLAND: return new MetaBlock(TFCBlocks.dirt2,4);
+		case FARMLAND: return new MetaBlock(TFCBlocks.tilledSoil,2);
 		case ORE_REDSTONE: return new MetaBlock(Blocks.redstone_ore);
 		case ICE: return new MetaBlock(TFCBlocks.ice);
 		case SNOW: return new MetaBlock(TFCBlocks.snow);
